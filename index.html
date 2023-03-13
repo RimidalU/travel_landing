@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar navbar-expand-md navbar-dark bg-dark" sticky-top>
         <a href="#" class="nav-brand">
             <img src="./img/logo.png" id="logo" width="70" alt="logo">
@@ -170,7 +169,7 @@
         <!-- Modal 'About Us'-->
         <div class="modal bd-example-modal-lg fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal"
             aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabel">Modal Title</h5>
@@ -182,7 +181,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="carousel slide" id="carouselIndicators1" data-ride="carousel"
-                                    data-interval="4000">
+                                    data-touch="true" data-interval="4000">
                                     <ol class="carousel-indicators">
                                         <li class="active" data-target="#carouselIndicators1" data-slide-to="0"></li>
                                         <li data-target="#carouselIndicators1" data-slide-to="1"></li>
@@ -272,125 +271,51 @@
 
         <!-- Cards -->
         <div class="container-fluid bg-light mt-3">
-            <div class="container p-5">
+            <div class="container p-2">
                 <h3 class="my-5" id="videoContent">Video content</h3>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="card mb-3">
-                            <img src="./img//logo.png" alt="card img" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
-                                    asperiores
-                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
-                                </p>
-                                <a href="#" class="btn btn-primary">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="card mb-3">
-                            <img src="./img//logo.png" alt="card img" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
-                                    asperiores
-                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
-                                </p>
-                                <a href="#" class="btn btn-primary">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="card mb-3">
-                            <img src="./img//logo.png" alt="card img" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
-                                    asperiores
-                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
-                                </p>
-                                <a href="#" class="btn btn-primary">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="card mb-3">
-                            <img src="./img//logo.png" alt="card img" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
-                                    asperiores
-                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
-                                </p>
-                                <a href="#" class="btn btn-primary">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="card mb-3">
-                            <img src="./img//logo.png" alt="card img" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
-                                    asperiores
-                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
-                                </p>
-                                <a href="#" class="btn btn-primary">Explore</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="videoContentWrapper">
                 </div>
             </div>
         </div>
 
-        <!-- Responsive video or slideshow embeds -->
-        <div class="container mt-3 pt-4">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" allowfullscreen
-                            src="https://www.youtube.com/embed/mXy31sNNYO0"></iframe>
+        <div class="container-fluid bg-light mt-3">
+            <div class="container p-5">
+                <h3 class="my-5" id="videoContent">Reports</h3>
+                <div class="row" id="videoContentWrapper">
+                    <div class="col-lg-4 col-md-6 col-xs-12">
+                        <div class="card mb-3">
+                            <img src="./img//logo.png" alt="card img" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
+                                    asperiores
+                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
+                                </p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
-                    <div class=" embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" allowfullscreen
-                            src="https://www.youtube.com/embed/mXy31sNNYO0"></iframe>
-                    </div>
-                </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
-                    <div class=" embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" allowfullscreen
-                            src="https://www.youtube.com/embed/mXy31sNNYO0"></iframe>
+                    <div class="col-lg-4 col-md-6 col-xs-12">
+                        <div class="card mb-3">
+                            <img src="./img//logo.png" alt="card img" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ex
+                                    asperiores
+                                    consequuntur voluptate dolore et sunt vitae dicta magnam.
+                                </p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
-                    <div class=" embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" allowfullscreen
-                            src="https://www.youtube.com/embed/mXy31sNNYO0"></iframe>
-                    </div>
                 </div>
             </div>
         </div>
@@ -407,8 +332,8 @@
                                 placeholder="John Doe" required>
                             <small id="namelHelp" class="form-text text-muted">*Enter You name</small>
 
-                            <label for="inputEmail">Email:</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                            <label for="Email">Email:</label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
                                 placeholder="example@email.com" required>
                             <small id="emailHelp" class="form-text text-muted">*Enter your email</small>
                         </div>
@@ -437,12 +362,11 @@
             <p><a href="https://github.com/RimidalU" target="_blank" class="">RimidalU &copy; 2023</a></p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
