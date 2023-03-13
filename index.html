@@ -39,13 +39,7 @@
                     </a>
                 </li>
             </ul>
-            <form action="" class="form-inline my-2 my-lg-0">
-                <input type="text" class="form-control mr-sm-2" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0">
-                    Search
-                </button>
-            </form>
-            <button class="btn btn-link my-2 my-sm-0" data-toggle="modal" data-target="#login">
+            <button class="btn btn-link ml-5 my-2 my-sm-0" data-toggle="modal" data-target="#login">
                 LogIn
             </button>
         </div>
@@ -337,7 +331,38 @@
         </div>
     </div>
 
-    <footer class=" py-4 bg-light">
+    <!-- Connect with us -->
+    <div class="container py-3 my-4 bg-info">
+        <h3 class="border-bottom mb-3 pb-3">Connect with us</h3>
+        <form action="#">
+            <div class="row">
+                <div class="col">
+                    <div class="form-froup">
+                        <label for="inputName">Name:</label>
+                        <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp"
+                            placeholder="John Doe" required>
+                        <small id="namelHelp" class="form-text text-muted">*Enter You name</small>
+
+                        <label for="inputEmail">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                            placeholder="example@email.com" required>
+                        <small id="emailHelp" class="form-text text-muted">*Enter your email</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="inputMessage">Text message:</label>
+                        <textarea class="form-control" id="inputMessage" aria-describedby="messageHelp"
+                            placeholder="We always welcome feedback..." rows="5" required></textarea>
+                        <small id="messageHelp" class="form-text text-muted">*Enter your message</small>
+                    </div>
+                    <button type="submit" class="btn btn-success float-right">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="py-4 bg-light border-top">
         <div class="container">
             <p class="float-right">
                 <a href="#">Back to top</a>
